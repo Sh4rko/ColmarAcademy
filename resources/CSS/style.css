@@ -1,0 +1,439 @@
+/* Universal Styles */
+html{
+  font-size: 16px;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h4{
+  font-size: 1rem;
+}
+
+.container{
+  display:flex;
+  width:100%;
+}
+
+@media only screen and (max-width: 450px) {
+
+h1{
+  font-size: 3rem;
+}
+}
+
+/*Header*/
+
+header{
+  display:flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height:4rem;
+  z-index:5;
+  background-color: white;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+
+}
+
+a{
+  padding-right: 1rem;
+
+  }
+
+.desktop{
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+.mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+
+
+.logo{
+  display: none;
+}
+
+.desktop{
+  display: none;
+}
+
+.mobile {
+  border: 1px solid black;
+  width:100%;
+    display: inline;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+}
+
+/*Mision Statement*/
+
+#mission{
+  width:100%;
+  margin-top: 4rem;
+  background-color: gray;
+}
+
+.mission-image{
+  margin: 2rem 1.5rem;
+  width:60%;
+}
+
+.mission-image img{
+  width:100%;
+}
+
+.statement{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  width:30%;
+}
+
+.statement h1, .statement h3{
+  padding-bottom: 1.5rem;
+}
+
+.button{
+  text-align: center;
+  font-size: 1.5 rem;
+  color:white;
+  background-color: black;
+  padding: .5rem 30%;
+}
+
+@media only screen and (max-width: 450px) {
+
+#mission{
+  flex-direction: column;
+}
+.mission-image{
+  margin:0rem;
+  width:100%;
+}
+
+.statement{
+  width:90%;
+  justify-content: flex-start;
+  padding: 2rem 1rem;
+}
+
+}
+
+
+/*News*/
+
+.news-main{
+  margin: 2rem 1.5rem;
+  width:60%;
+  padding-bottom: 2rem;
+}
+
+.news-main img{
+  width:100%;
+}
+
+.news-main h2{
+  padding-top: 2rem;
+}
+
+.news-main h4{
+  padding-top: 1.5rem;
+}
+
+.news{
+  display:flex;
+  width:40%;
+  flex-direction: column;
+}
+
+.news-small{
+  display: flex;
+}
+
+.news-img-desktop{
+  width:35%;
+  padding:1rem;
+}
+
+.news-img-mobile{
+  display:none;
+}
+
+.news-text{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  width:65%;
+}
+
+.news-text h4{
+  padding-top: .5rem;
+}
+
+.link{
+  color:blue;
+}
+
+.news-img-desktop img{
+  width: 100%;
+}
+.news-small:last-child{
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 450px) {
+
+.news-main{
+  display:none;
+}
+
+.news{
+  width:100%;
+}
+
+.news-small{
+  align-items: center;
+  padding:1rem;
+  flex-direction: column;
+}
+
+.news-img-desktop{
+  display: none;
+}
+
+.news-img-mobile{
+  display: block;
+}
+
+.news-img-mobile img{
+  width:100%;
+
+}
+
+.news-text{
+  width:100%;
+  padding-top:1rem;
+  padding-left:1rem;
+  padding-bottom:2rem;
+}
+
+.news-small:last-child{
+  background-color: white;
+}
+
+}
+
+/*Start Learning*/
+
+#start{
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+}
+
+#start h2{
+  padding-top: 2rem;
+
+}
+
+.learning{
+  display: flex;
+  flex-wrap: wrap;
+  max-width:100%;
+  justify-content: center;
+  margin: 2rem 4.5rem;
+}
+
+.courses{
+  display:flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 30%;
+  background-color: white;
+  align-items: flex-start;
+}
+
+.courses img{
+  width: 100%;
+}
+
+.courses h3, .courses h4{
+  padding-left: 1rem;
+}
+
+.courses h3{
+  padding-top:1rem;
+  padding-bottom:1rem;
+}
+
+.courses h4{
+  padding-top:.5rem;
+  padding-bottom:1.5rem;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 450px) {
+  #start{
+    background-color: white;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+.learning{
+    width:90%;
+    display:block;
+}
+
+.courses{
+  margin-left: 0rem;
+  marign-right:0rem;
+  margin-top: 0rem;
+  margin-bottom: .5rem;
+  width:100%;
+  background-color: lightgray;
+}
+
+.courses h3{
+  padding-bottom:1.5rem;
+}
+
+.courses img, .courses h4{
+  display:none;
+
+}
+
+}
+
+
+/*Thesis Exhibit*/
+
+.headline{
+  text-align: center;
+  margin:2rem auto;
+}
+
+.thesis-main{
+  margin: 0rem 1.5rem;
+  width:60%;
+  padding-bottom: 2rem;
+}
+
+.thesis-main video{
+  display:inline;
+  width:100%;
+}
+
+.thesis-main h2{
+  padding-top: 2rem;
+}
+
+.thesis-main h4{
+  padding-top: 1.5rem;
+}
+
+.thesis{
+  display:flex;
+  width:40%;
+  flex-direction: column;
+}
+
+.thesis-small{
+  display: flex;
+}
+
+.thesis-img{
+  width:35%;
+  padding:1rem;
+}
+
+.thesis-text{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  width:65%;
+}
+
+.thesis-text h4{
+  padding-top: .5rem;
+}
+
+.thesis-img img{
+  width: 100%;
+}
+
+.thesis-small:first-child{
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 450px) {
+
+.headline{
+  margin-bottom: 1rem;
+}
+
+.thesis{
+  display:none;
+}
+
+.thesis-main h2, .thesis-main h4{
+  display: none;
+}
+
+.thesis-main{
+  margin: 0rem;
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+
+
+
+}
+
+
+/*Footer*/
+
+footer{
+  justify-content: space-between;
+  border-top: 1px solid lightgray;
+}
+footer span{
+  padding:1rem 1.5rem;
+}
+
+@media only screen and (max-width: 450px) {
+
+footer{
+  border-top:none;
+}
+
+.terms{
+  display: none;
+}
+
+}
